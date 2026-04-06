@@ -18,7 +18,7 @@ body {
   padding: 32px 16px;
 }
  
-/* ── GRID CONTAINER ── */
+
 .grid {
   width: 100%;
   max-width: 960px;
@@ -33,7 +33,7 @@ body {
     "d  d  d  d  d  d";
 }
  
-/* ── CELL ── */
+
 .cell {
   position: relative;
   border-radius: var(--radius);
@@ -88,12 +88,7 @@ body {
 .cell-b { grid-area: b; }
 .cell-c { grid-area: c; }
 .cell-d { grid-area: d; }
- 
-/* ── TABLET ──
-   Layout:
-   [ A    ] [ D      ]
-   [ B ][ C] [ D     ]
-*/
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: repeat(4, 1fr);
@@ -103,8 +98,6 @@ body {
       "b  c  d  d";
   }
 }
- 
-/* ── MOBILE ── */
 @media (max-width: 480px) {
   .grid {
     grid-template-columns: 1fr;
